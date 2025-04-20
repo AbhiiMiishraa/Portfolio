@@ -24,8 +24,8 @@ let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
 let javascriptStartValue = 0,
-  javascriptEndValue = 75,
-  jsspeed = 30;
+  javascriptEndValue = 95,
+  jsspeed = 20;
 
 let progressjs = setInterval(() => {
   javascriptStartValue++;
@@ -40,34 +40,34 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+// Java progress circular bar 
+let JavaProgress = document.querySelector(".Java"),
+JavaValue = document.querySelector(".Java-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+let JavaStartValue = 0,
+JavaEndValue = 80,
+Javaspeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+let progressJava = setInterval(() => {
+  JavaStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
+  JavaValue.textContent = `${JavaStartValue}%`;
+  JavaProgress.style.background = `conic-gradient(#20c997 ${
+    JavaStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
+  if (JavaStartValue == JavaEndValue) {
+    clearInterval(progressJava);
   }
-}, phpspeed);
+}, Javaspeed);
 
 // reactjs progress circular bar 
 let reactProgress = document.querySelector(".reactjs"),
   reactValue = document.querySelector(".reactjs-progress");
 
 let reactStartValue = 0,
-  reactEndValue = 30,
-  rjsspeed = 30;
+  reactEndValue = 90,
+  rjsspeed = 20;
 
 let progressreact = setInterval(() => {
   reactStartValue++;
